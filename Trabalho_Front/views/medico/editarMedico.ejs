@@ -1,0 +1,73 @@
+<%- include('../partials/header.ejs') %>
+
+<body>
+
+    <div class="container">
+
+        <div class="card">
+
+            <div class="card-header">
+                <h5 class="card-title">EDITAR MÉDICO</h5>
+            </div>
+
+            <div class="card-body">
+
+                <form action="http://localhost:3000/Medico/editarMedico"
+                method="post">
+
+                <input type="hidden" name="id" value="<%= medico.id %>">
+
+                <label for="nome_medico"></label>
+                <input class="form-control" type="text" 
+                name="nome_medico" id="nome_medico"
+                placeholder="NOME DO MEDICO"> <br/> 
+
+                <labe2 for="telefone_medico"></labe2>
+                <input class="form-control" type="text" 
+                name="telefone_medico" id="telefone_medico"
+                placeholder="TELEFONE DO MEDICO"> <br/> 
+
+                <h8>Foto do Medico</h8>
+                <labe3 for="Foto_medico"></labe3>
+                <input class="form-control" type="file" 
+                name="files" id="files"
+                placeholder="FOTO DO MEDICO"> <br/> 
+                
+                <h8>Foto do CRM</h8>
+                <labe4 for="Foto_CRM"></labe4>
+                <input class="form-control" type="file" 
+                name="files" id="files"
+                placeholder="FOTO DO MEDICO"> <br/> 
+
+                <labe5 for="email_medico"></labe5>
+                <input class="form-control" type="text" 
+                name="email_medico" id="email_medico"
+                placeholder="EMAIL DO MEDICO"> <br/> 
+
+                <labe6 for="celular_medico"></labe6>
+                <input class="form-control" type="text" 
+                name="celular_medico" id="celular_medico"
+                placeholder="CELULAR DO MEDICO"> <br/> 
+
+               <labe7 for="tblEspecialidadeId"></labe6>
+                <h8>1 - UROLOGISTA     2 - CARDIOLOGISTA     4 - PEDIATRA </h8> <br/> 
+                <input class="form-control" type="text" 
+                name="tblEspecialidadeId" id="tblEspecialidadeId"
+                placeholder=" ID ESPECIALIDADE DO MEDICO"> <br/>
+
+                    
+                    <button class="btn btn-success mt-2">EDITAR</button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+
+<%- include('../partials/footer.ejs') %>
+
+</html>

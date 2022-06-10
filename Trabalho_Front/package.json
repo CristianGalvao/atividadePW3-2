@@ -1,0 +1,28 @@
+{
+  "name": "front-livraria-aula",
+  "version": "1.0.0",
+  "description": "FRONT-END DE CONSUMO DA API DA LIVRARIA",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [
+    "PW3",
+    "NODE",
+    "JS",
+    "ETEC",
+    "DE",
+    "BARUERI"
+  ],
+  "author": "CRISTIANO CORREA DE MORAES",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "ejs": "^3.1.7",
+    "express": "^4.18.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
